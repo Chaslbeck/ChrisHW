@@ -1,8 +1,10 @@
 /*Chris Haslbeck*/
 
-#include <stdio.h>
+#include <stdio.h> <stdlib.h> <unistd.h>
 int main(void){
+	srand(getpid());
 
+	int num1 = rand();
 	int month = 0;
 
 	scanf("%d", &month);
@@ -49,6 +51,9 @@ int main(void){
 	if(month >12) {
 	printf("This month does not exist\n");
 	}
+
+
+	printf("%d\n",num1);
 
 return 0;
 }
